@@ -1,0 +1,36 @@
+{
+  "name": "umi-plugin-kiwi",
+  "version": "0.0.1",
+  "description": "alibaba kiwi",
+  "authors": {
+    "name": "xiaohuoni",
+    "email": "448627663@qq.com"
+  },
+  "repository": "alitajs/umi-plugin-kiwi",
+  "peerDependencies": {
+    "umi": "2.x"
+  },
+  "browser": {
+    "./lib/index.js": "./lib/I18N.js"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "kiwiinit": "kiwi --init",
+    "build": "umi-tools build",
+    "prepublishOnly": "npm run build && np --no-cleanup --yolo --no-publish"
+  },
+  "devDependencies": {
+    "np": "^3.0.4",
+    "umi-tools": "*"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "kiwi-clis": "^1.0.1",
+    "kiwi-intl": "^1.2.2"
+  }
+}
